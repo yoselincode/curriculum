@@ -6,6 +6,7 @@ html, body {
   padding: 0;
   top: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(93, 10, 148, 1) !important;
 }
 
 
@@ -19,7 +20,7 @@ main {
   justify-content: center;
   gap: 0.5rem;
   color: white;
-  min-height: 70rem;
+  min-height: 77rem;
   max-height: max-content;
   padding-top: 6rem;
 }
