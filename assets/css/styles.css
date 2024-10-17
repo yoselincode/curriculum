@@ -1,57 +1,67 @@
-html, footer, body {
-    background-color: black;
-}
-
-footer {
-    text-align: center;
-  }
+/* GLOBALES */
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-img {
-    width: 250px;
-    background-size: contain;
-    height: 250px;
-    border-radius: 13px;
-}
-
-
-section {
-    margin-top: 10px;
-    text-align: center;
-    width: 500px;
-}
-
 main {
-    font-family: 'Trebuchet MS', sans-serif;
-    text-align: center;
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/001/930/884/large/davison-carvalho-thegridtv-show-titles-03.jpg?1454749063");
+    background-attachment: fixed;
     display: flex;
-    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
-    margin-top: 70px;
-    width: 100%;
-    color: rgb(199, 199, 199);
-    background: linear-gradient(black, #333);
+    color: white;
+    height: max-content;
+    padding-top: 5rem;
 }
 
-nav {
-    display: flex;
-        justify-content: space-around;
-    align-content: center;
-    margin: 0 auto;
+/* NAV */
+
+.navbar {
     position: fixed !important;
-    top: 0;
+    top: 0 !important;
     width: 100%;
-    color: white;
-    background-color: #0d0d0de9;
     z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.419) !important;
 }
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
 nav img {
     width: 9rem;
     height: auto;
+    border-radius: none !important;
+}
+
+
+.nav-link:hover {
+    color: rgb(0, 195, 255) !important;
+}
+
+.show a {
+    text-align: center;
+    transition: transform .8s ease-in-out;
+}
+
+.show a:hover {
+    transform: scale(1.2);
+}
+
+/* FORMATS */
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 1rem !important;
 }
 
 p {
@@ -60,37 +70,130 @@ p {
     width: 100%;
 }
 
-p.spacer {
+.spacer {
     margin-top: 20px;
 }
 
 li {
-    margin-top: 10px;
+    margin: 1rem 0;
     text-align: justify;
-    text-justify: start-;
+    padding-right: 2rem;
 }
 
-label, strong {
+strong {
     color: rgb(149, 255, 0);
 }
+
 label {
     color: rgb(255, 0, 136) !important;
+    font-weight: bold;
 }
+
+h2 {
+    color: rgb(0, 195, 255);
+}
+
+
+
+/* CV PLAYER */
+
+.perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50% !important;
+    margin: auto;
+    object-fit: cover;
+}
+
+.education {
+    margin: 2rem 1rem;
+    padding-right: 2rem;
+    padding: 3rem !important;
+    width: 40rem;
+}
+
+.skill-container {
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+    border-radius: 20px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: rgb(149, 255, 0);
+    border-radius: 20px;
+}
+
+/* BACKGROUNDS BLUR */
+
+
+.blurred-section {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    padding: 10px;
+    border-radius: 20px !important;
+}
+
+/* BACKGROUNDS AMIMATIONS */
+
+.background-animation {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.code-line {
+    color: rgb(255, 255, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards, move 5s forwards linear;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+/* PORTAFOLIO */
 
 .btn {
     background-color: rgb(255, 0, 136) !important;
     border: none !important;
+    width: 10rem;
+    border-radius: 1rem !important;
 }
-.btn:hover  {
+
+.btn:hover {
     background-color: rgb(19, 255, 227) !important;
 }
 
-
-
-.nav-link:hover{
-    color: rgb(0, 195, 255) !important;
+/* FOOTER */
+footer {
+    background-color: rgb(9, 0, 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 1rem 0;
 }
 
-h2 {
-    color: rgb(255, 255, 255) !important;
+footer p {
+    margin: 0;
 }
