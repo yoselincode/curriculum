@@ -1,17 +1,23 @@
-html {
+html, footer, body {
     background-color: black;
-    height: 100vw;
 }
+
+footer {
+    text-align: center;
+  }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 img {
-    width: 300px;
-    background-size: cover;
-    height: auto;
+    width: 250px;
+    background-size: contain;
+    height: 250px;
+    border-radius: 13px;
 }
 
-.spacer {
-    margin-top: 10px;
-}
 
 section {
     margin-top: 10px;
@@ -20,22 +26,22 @@ section {
 }
 
 main {
+    font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
     display: flex;
     align-content: center;
-    justify-content: space-around;
-    margin: 20px 0;
-    background-color: black;
-    margin-top: 60px;
+    justify-content: space-evenly;
+    margin-top: 70px;
     width: 100%;
-    padding: 2rem;
-    color: antiquewhite;
+    color: rgb(199, 199, 199);
+    background: linear-gradient(black, #333);
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+        justify-content: space-around;
     align-content: center;
+    margin: 0 auto;
     position: fixed !important;
     top: 0;
     width: 100%;
@@ -64,3 +70,27 @@ li {
     text-justify: start-;
 }
 
+label, strong {
+    color: rgb(149, 255, 0);
+}
+label {
+    color: rgb(255, 0, 136) !important;
+}
+
+.btn {
+    background-color: rgb(255, 0, 136) !important;
+    border: none !important;
+}
+.btn:hover  {
+    background-color: rgb(19, 255, 227) !important;
+}
+
+
+
+.nav-link:hover{
+    color: rgb(0, 195, 255) !important;
+}
+
+h2 {
+    color: rgb(255, 255, 255) !important;
+}
