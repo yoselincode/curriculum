@@ -1,32 +1,28 @@
 /* GLOBALES */
-
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   top: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(93, 10, 148, 1) !important;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #06001b !important;
+  display: flex;
+  flex-direction: column;
 }
 
-
+/* Main content */
 main {
-  background-image: url("https://cdna.artstation.com/p/assets/images/images/001/930/884/large/davison-carvalho-thegridtv-show-titles-03.jpg?1454749063");
-  background-attachment: fixed;
-  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   align-items: start;
   justify-content: center;
   gap: 0.5rem;
   color: white;
-  min-height: 77rem;
-  max-height: max-content;
+  flex-grow: 1; 
   padding-top: 6rem;
 }
 
 /* NAV */
-
 .navbar {
   position: fixed !important;
   top: 0 !important;
@@ -41,7 +37,6 @@ main {
 .container-fluid {
   margin: 0;
   padding: 0;
-
 }
 
 nav img {
@@ -64,7 +59,6 @@ nav img {
 }
 
 /* FORMATS */
-
 img {
   object-fit: cover;
   max-width: 100%;
@@ -76,10 +70,6 @@ p {
   font-size: 1.1rem;
   text-align: justify;
   width: 100%;
-}
-
-.spacer {
-  margin-top: 20px;
 }
 
 li {
@@ -102,7 +92,6 @@ h2 {
 }
 
 /* CV PLAYER */
-
 .perfil {
   width: 250px;
   height: 250px;
@@ -126,7 +115,7 @@ h2 {
 
 .progress-bar {
   width: 100%;
-  background-color: rgb(8, 0, 77) !important;
+  background-color: rgb(98, 38, 155) !important;
   border-radius: 20px;
   position: relative;
 }
@@ -138,7 +127,6 @@ h2 {
 }
 
 /* BACKGROUNDS BLUR */
-
 .blurred-section {
   max-width: 40rem;
   padding-right: 1rem;
@@ -148,8 +136,7 @@ h2 {
   border-radius: 20px !important;
 }
 
-/* BACKGROUNDS AMIMATIONS */
-
+/* BACKGROUNDS ANIMATIONS */
 .background-animation {
   position: absolute;
   width: 100%;
@@ -181,41 +168,36 @@ h2 {
 }
 
 /* PORTAFOLIO */
-
 .card {
   display: flex;
-  flex-direction: column; /* Para que el contenido y el botón se alineen en columna */
-  justify-content: space-between; /* Para distribuir el espacio entre el contenido */
-  height: 100%; /* Para que cada tarjeta ocupe todo el espacio disponible */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-/* Asegura que el cuerpo de la tarjeta tenga espacio para el texto */
 .card-body {
-  flex-grow: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Esto coloca el botón en la parte inferior */
+  justify-content: space-between;
 }
 
-/* Ajusta la imagen para que no afecte la distribución */
 .card-img-top {
   object-fit: cover;
-  max-height: 200px; /* Ajusta la altura máxima para que las imágenes no sean demasiado grandes */
+  max-height: 200px;
   border-radius: 10px;
 }
 
-/* Ajusta el contenedor principal para evitar superposiciones */
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* Añade espacio entre las tarjetas */
+  gap: 2rem;
   justify-content: center;
 }
 
-
 .btn {
-  align-self: flex-end; /* Asegura que el botón quede alineado al final del contenedor de la tarjeta */
-  margin-top: auto; /* Asegura que el botón siempre esté al final del contenido */
+  align-self: flex-end;
+  margin-top: auto;
   background-color: rgb(255, 41, 155) !important;
   border: none !important;
   width: 10rem;
@@ -235,9 +217,9 @@ footer {
   height: max-content;
   padding: 1rem 0;
   width: 100%;
-  position: relative; /* Ajusta la posición del footer */
+  position: relative;
   bottom: 0;
-  flex-shrink: 0; /* Evita que el footer se encoja cuando el contenido sea demasiado */
+  flex-shrink: 0;
 }
 
 footer p {

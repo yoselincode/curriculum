@@ -11,13 +11,13 @@
    codeLine.style.top = Math.random() * 200 + 'vh';
    codeLine.style.left = Math.random() * 100 + 'vw';
 
-   codeLine.style.animationDelay = Math.random() * 1 + 's';
+   codeLine.style.animationDelay = Math.random() * 0.4 + 's';
 
    container.appendChild(codeLine);
 
    setTimeout(() => {
      codeLine.remove();
-   }, 5000);
+   }, 4000);
  }
 
  setInterval(createCodeLine, 100);
