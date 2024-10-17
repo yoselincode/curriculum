@@ -1,5 +1,6 @@
-body {
+html {
     background-color: black;
+    height: 100vw;
 }
 
 img {
@@ -12,8 +13,7 @@ main {
     background-color: black;
     margin-top: 60px;
     padding: 2rem;
-    background-color: #d48686;
-    border-radius: 10px;
+    color: antiquewhite;
 }
 
 nav {
