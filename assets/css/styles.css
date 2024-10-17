@@ -1,198 +1,209 @@
 /* GLOBALES */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 main {
-    background-image: url("https://cdna.artstation.com/p/assets/images/images/001/930/884/large/davison-carvalho-thegridtv-show-titles-03.jpg?1454749063");
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-evenly;
-    color: white;
-    height: max-content;
-    padding-top: 5rem;
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/001/930/884/large/davison-carvalho-thegridtv-show-titles-03.jpg?1454749063");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+  min-height: 70rem;
+  max-height: max-content;
+  padding-top: 6rem;
 }
 
 /* NAV */
 
 .navbar {
-    position: fixed !important;
-    top: 0 !important;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.419) !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(93, 10, 148, 0.699) !important;
 }
 
 .container-fluid {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+
 }
 
 nav img {
-    width: 9rem;
-    height: auto;
-    border-radius: none !important;
+  width: 9rem;
+  height: auto;
+  border-radius: none !important;
 }
 
-
 .nav-link:hover {
-    color: rgb(0, 195, 255) !important;
+  color: rgb(0, 195, 255) !important;
 }
 
 .show a {
-    text-align: center;
-    transition: transform .8s ease-in-out;
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
 }
 
 .show a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* FORMATS */
 
 img {
-    object-fit: cover;
-    max-width: 100%;
-    height: 300px;
-    border-radius: 1rem !important;
+  object-fit: cover;
+  max-width: 100%;
+  height: 300px;
+  border-radius: 1rem !important;
 }
 
 p {
-    font-size: 1.1rem;
-    text-align: justify;
-    width: 100%;
+  font-size: 1.1rem;
+  text-align: justify;
+  width: 100%;
+  height: 6rem;
 }
 
 .spacer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 li {
-    margin: 1rem 0;
-    text-align: justify;
-    padding-right: 2rem;
+  margin: 1rem 0;
+  text-align: justify;
+  padding-right: 2rem;
 }
 
 strong {
-    color: rgb(149, 255, 0);
+  color: rgb(149, 255, 0);
 }
 
 label {
-    color: rgb(255, 0, 136) !important;
-    font-weight: bold;
+  color: rgb(255, 0, 136) !important;
+  font-weight: bold;
 }
 
 h2 {
-    color: rgb(0, 195, 255);
+  color: rgb(0, 195, 255);
 }
-
-
 
 /* CV PLAYER */
 
 .perfil {
-    width: 250px;
-    height: 250px;
-    border-radius: 50% !important;
-    margin: auto;
-    object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 50% !important;
+  margin: auto;
+  object-fit: cover;
 }
 
 .education {
-    margin: 2rem 1rem;
+  margin: 2rem 1rem;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .skill-container {
-    margin-top: 1rem;
+  margin-top: 1rem;
+  width: 90%;
 }
 
 .progress-bar {
-    width: 100%;
-    background-color: rgb(80, 80, 80);
-    border-radius: 20px;
-    position: relative;
+  width: 100%;
+  background-color: rgb(8, 0, 77) !important;
+  border-radius: 20px;
+  position: relative;
 }
 
 .progress {
-    height: 100%;
-    background-color: rgb(149, 255, 0);
-    border-radius: 20px;
+  height: 100%;
+  background-color: rgb(220, 255, 66) !important;
+  border-radius: 20px;
 }
 
 /* BACKGROUNDS BLUR */
 
-
 .blurred-section {
-    max-width: 40rem;
-    padding-right: 2rem;
-    padding: 4rem !important;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    border-radius: 20px !important;
+  max-width: 40rem;
+  padding-right: 1rem;
+  padding: 2.5rem !important;
+  backdrop-filter: blur(10px);
+  background-color: rgba(73, 76, 255, 0.2) !important;
+  border-radius: 20px !important;
 }
 
 /* BACKGROUNDS AMIMATIONS */
 
 .background-animation {
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .code-line {
-    color: rgb(255, 255, 0);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    opacity: 0;
-    animation: fadeIn 0.5s forwards, move 5s forwards linear;
+  color: rgb(255, 255, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards, move 5s forwards linear;
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes move {
-    to {
-        transform: translateY(-100vh);
-    }
+  to {
+    transform: translateY(-100vh);
+  }
 }
 
 /* PORTAFOLIO */
 
 .btn {
-    background-color: rgb(255, 0, 136) !important;
-    border: none !important;
-    width: 10rem;
-    border-radius: 1rem !important;
+  background-color: rgb(255, 41, 155) !important;
+  border: none !important;
+  width: 10rem;
+  border-radius: 1rem !important;
 }
 
 .btn:hover {
-    background-color: rgb(19, 255, 227) !important;
+  background-color: rgb(19, 255, 227) !important;
 }
 
 /* FOOTER */
-footer {
-    background-color: rgb(9, 0, 42);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
-    padding: 1rem 0;
+footer p {
+  background-color: rgb(63, 0, 114) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  padding: 1rem 0;
 }
 
-footer p {
-    margin: 0;
+footer {
+  bottom: 0;
 }
+
