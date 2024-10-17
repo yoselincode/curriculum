@@ -2,11 +2,17 @@ body {
     background-color: black;
 }
 
+img {
+    width: auto;
+    background-size: cover;
+    height: 15rem;
+}
+
 main {
     background-color: black;
     margin-top: 60px;
     padding: 2rem;
-    background-color: #f1f1f1;
+    background-color: #d48686;
     border-radius: 10px;
 }
 
@@ -21,5 +27,6 @@ nav {
     z-index: 1000;
 }
 nav img {
-    width: 10rem;
+    width: 9rem;
+    height: auto;
 }
