@@ -75,7 +75,6 @@ p {
   font-size: 1.1rem;
   text-align: justify;
   width: 100%;
-  height: 6rem;
 }
 
 .spacer {
@@ -182,7 +181,40 @@ h2 {
 
 /* PORTAFOLIO */
 
+.card {
+  display: flex;
+  flex-direction: column; /* Para que el contenido y el botón se alineen en columna */
+  justify-content: space-between; /* Para distribuir el espacio entre el contenido */
+  height: 100%; /* Para que cada tarjeta ocupe todo el espacio disponible */
+}
+
+/* Asegura que el cuerpo de la tarjeta tenga espacio para el texto */
+.card-body {
+  flex-grow: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Esto coloca el botón en la parte inferior */
+}
+
+/* Ajusta la imagen para que no afecte la distribución */
+.card-img-top {
+  object-fit: cover;
+  max-height: 200px; /* Ajusta la altura máxima para que las imágenes no sean demasiado grandes */
+  border-radius: 10px;
+}
+
+/* Ajusta el contenedor principal para evitar superposiciones */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Añade espacio entre las tarjetas */
+  justify-content: center;
+}
+
+
 .btn {
+  align-self: flex-end; /* Asegura que el botón quede alineado al final del contenedor de la tarjeta */
+  margin-top: auto; /* Asegura que el botón siempre esté al final del contenido */
   background-color: rgb(255, 41, 155) !important;
   border: none !important;
   width: 10rem;
@@ -194,16 +226,20 @@ h2 {
 }
 
 /* FOOTER */
-footer p {
+footer {
   background-color: rgb(63, 0, 114) !important;
   display: flex;
   align-items: center;
   justify-content: center;
   height: max-content;
   padding: 1rem 0;
-}
-
-footer {
+  width: 100%;
+  position: relative; /* Ajusta la posición del footer */
   bottom: 0;
+  flex-shrink: 0; /* Evita que el footer se encoja cuando el contenido sea demasiado */
 }
 
+footer p {
+  margin: 0;
+  color: white;
+}
