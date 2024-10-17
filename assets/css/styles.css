@@ -9,7 +9,7 @@ main {
     background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
     color: white;
     height: max-content;
@@ -107,9 +107,6 @@ h2 {
 
 .education {
     margin: 2rem 1rem;
-    padding-right: 2rem;
-    padding: 3rem !important;
-    width: 40rem;
 }
 
 .skill-container {
@@ -133,9 +130,11 @@ h2 {
 
 
 .blurred-section {
+    max-width: 40rem;
+    padding-right: 2rem;
+    padding: 4rem !important;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.2) !important;
-    padding: 10px;
     border-radius: 20px !important;
 }
 
