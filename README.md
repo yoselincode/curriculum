@@ -2,7 +2,8 @@
 
 ## 🔗 Links
 
-- [MY CURRICULUM](https://pyro-nicolini.github.io/curriculum/)
+- [Mi Currilum](https://pyro-nicolini.github.io/curriculum/)
+- [Mis certificados](https://pyro-nicolini.github.io/certificates/)
 - [https://github.com/Pyro-Nicolin](https://github.com/Pyro-Nicolini)
 
 ## 📫 Get in Touch
